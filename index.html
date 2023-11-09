@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonie</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF8C9;
+        }
+
+        header {
+            background-color: #BEADFA;
+            color: #333;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #D0BFFF;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 2em;
+            display: none; /* Başlangıçta tüm bölümleri gizle */
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .product {
+            border: 1px solid #DDD;
+            border-radius: 5px;
+            padding: 1em;
+            margin: 1em;
+            background-color: #DFCCFB;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: auto;
+            max-height: auto;
+        }
+
+        footer {
+            background-color: #BEADFA;
+            color: #333;
+            padding: 1em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
+        #welcome {
+            display: block;
+        }
+
+        /* Sadece ilgili menüye tıklandığında içeriği gösterir */
+        #women:target, #men:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Moonie Butik</h1>
+    </header>
+
+    <nav>
+        <a href="#welcome">Anasayfa</a>
+        <a href="#women">Kadın</a>
+        <a href="#men">Erkek</a>
+    </nav>
+
+    <section id="welcome">
+        <h2>Butiğimize Hoşgeldiniz! </h2>
+        <img class="welcome-image" src="D:\Downloads\Ekran görüntüsü 2023-11-09 215254.jpg" alt="Hoşgeldiniz Resmi">
+    </section>
+
+    <section id="women">
+        <h2>Kadın</h2>
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/front-view-smiley-woman-pointing-herself_23-2148946299.jpg?size=626&ext=jpg" alt="Kadın Ürün 1">
+            <h3>Tişört</h3>
+            <p>Fiyat: 50 TL</p>
+        </div>
+
+        <!-- kadın ürünleri buraya eklenir -->
+    </section>
+
+    <section id="men">
+        <h2>Erkek</h2>
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/man-with-sunglasses-wearing-white-t-shirt-posing_158538-16723.jpg?size=626&ext=jpg&ga=GA1.1.171724087.1699556698&semt=ais" alt="Erkek Ürün 1">
+            <h3>Tişört</h3>
+            <p>Fiyat: 50 TL</p>
+        </div>
+
+        <!-- erkek ürünleri buraya ekleneir -->
+    </section>
+
+    <footer>
+        &copy; 2023 Moonie
+    </footer>
+
+</body>
+
+</html>
